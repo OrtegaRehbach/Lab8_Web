@@ -63,6 +63,18 @@ export function App() {
         setDisabled(false)
     }
 
+    // Check if player has won
+    useEffect(() => {
+        setTimeout(() => checkForWin(), 1200)
+    }, [cards])
+
+    const checkForWin = () => {
+        const check = cards.every(card => card.matched === true)
+        if (check && cards.length > 0) {
+            alert("Felicidades! Has completado el juego en '" + moves + "' movimientos!")
+        }
+    }
+
     // Start a new game automatically
     useEffect(() => {
         shuffleCards()
@@ -84,7 +96,7 @@ export function App() {
                 ))}
             </div>
             <p>Movimientos: {moves}</p>
-            <button onClick={shuffleCards}>Restart</button>
+            <button className="reset-button" onClick={shuffleCards}>Restart</button>
         </div>
     );
 }
