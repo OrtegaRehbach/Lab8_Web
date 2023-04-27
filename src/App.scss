@@ -10,4 +10,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
+    padding: 30px;
+    background-color: rgba($color: #141414, $alpha: 0.3);
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
+
+.reset-button {
+    padding: 15px 35px;
+    transition-duration: 0.4s;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 3px solid white;
+    border-radius: 3px;
+}
+
+.reset-button:hover {
+    background-color: lightslategray;
+    border-color: lightslategray;
+    color: white;
 }

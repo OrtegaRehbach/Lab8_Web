@@ -2,14 +2,19 @@
     position: relative;
     width: 100px;
     height: 140px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card img {
     height: 100%;
     width: 100%;
-    border: 2px solid white;
+    border: 2px solid lightslategray;
     border-radius: 6px;
-    background-color: darkblue;
+    background-color: #2C3E50;
     object-fit: contain;
 }
 
