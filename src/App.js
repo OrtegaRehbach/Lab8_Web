@@ -2,16 +2,27 @@ import "./App.scss";
 import React, { useEffect, useState } from "react";
 import Card from "./components/card/card";
 
-const cardCover = "/assets/images/cover.jpg"
+import cover from "../public/assets/images/cover.jpg"
+import img1 from "../public/assets/images/diamond.png"
+import img2 from "../public/assets/images/iron_ingot.png"
+import img3 from "../public/assets/images/gold.png"
+import img4 from "../public/assets/images/emerald.png"
+import img5 from "../public/assets/images/coal.png"
+import img6 from "../public/assets/images/netherite_ingot.png"
+import img7 from "../public/assets/images/redstone_dust.png"
+import img8 from "../public/assets/images/amethyst_shard.png"
+
+
+const cardCover = cover
 const cardImages = [
-    {"src": "/assets/images/diamond.png", matched: false},
-    {"src": "/assets/images/iron_ingot.png", matched: false},
-    {"src": "/assets/images/gold.png", matched: false},
-    {"src": "/assets/images/emerald.png", matched: false},
-    {"src": "/assets/images/coal.png", matched: false},
-    {"src": "/assets/images/netherite_ingot.png", matched: false},
-    {"src": "/assets/images/redstone_dust.png", matched: false},
-    {"src": "/assets/images/amethyst_shard.png", matched: false}
+    {"src": img1, matched: false},
+    {"src": img2, matched: false},
+    {"src": img3, matched: false},
+    {"src": img4, matched: false},
+    {"src": img5, matched: false},
+    {"src": img6, matched: false},
+    {"src": img7, matched: false},
+    {"src": img8, matched: false}
 ]
 
 export function App() {
